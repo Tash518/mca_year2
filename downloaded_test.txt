@@ -1,0 +1,15 @@
+TCP Client Server Communication
+1. String Processing Server: Implement a TCP client server application where the client sends a string to the
+server. The server determines the length of the string, number of vowels, number of consonants, and number
+of digits, and sends the results back to the client.
+2. Simple File Transfer: Implement a TCP client server application in which the client requests a file by
+specifying its filename. If the file exists, the server sends its contents to the client, which stores them in a new
+file. If the requested file does not exist, the server sends an appropriate error response.
+3. Command Based TCP Service: Design a TCP server supporting the following requests from a client: TIME
+⇒ return server time; DATE ⇒ return server date; HOSTNAME ⇒ return server hostname; ECHO <message> ⇒
+return the supplied message; and QUIT ⇒ terminate the connection. Define a simple application layer protocol
+for the requests and responses. Implement the server so that it can serve multiple clients sequentially. After
+one client disconnects, the server should return to accept() and wait for another client. Record and display
+the IP address and port number of every connected client.
+4. Concurrent TCP Server: Extend the above problem statement, so that multiple clients can be served
+concurrently. Implement the server using either fork() or
